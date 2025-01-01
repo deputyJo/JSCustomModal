@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    width: 0;
+    font-family: "Playwrite AU VIC Guides", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header,
+main,
+footer {
+    margin: 1rem;
+}
+
+
+
+
+/* modal */
+
+.modalOverlay {
+    background-color: rgb(205, 205, 205);
+    opacity: 0.8;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+
+}
+
+.modal {
+    background-color: rgb(230, 230, 230);
+    height: 50vh;
+    width: 70vw;
+    border-radius: 5rem;
+    border: 1px solid rgb(48, 48, 48);
+    box-shadow: 12px 12px 2px 1px rgba(46, 46, 46, 0.2);
+    text-align: center;
+}
+
+.modal .modalHeading,
+.modal .modalParagraph {
+    vertical-align: middle;
+    text-align: center;
+    line-height: 10vh;
+}
+
+
+
+/* buttons */
+
+.closeButton {
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 12px 12px 2px 1px rgba(46, 46, 46, 0.2);
+    background-color: rgb(243, 242, 242);
+    transition: all 0.3 ease;
+}
+
+.closeButton:active {
+    background-color: rgb(231, 224, 224);
+    box-shadow: 9px 9px 2px 1px rgb(123, 123, 123);
+    transform: scale(0.9);
+}
+
+.closeButton:focus {
+    border-color: rgb(206, 7, 7);
+    border-width: 2px;
+    background-color: rgb(234, 143, 143);
+}
